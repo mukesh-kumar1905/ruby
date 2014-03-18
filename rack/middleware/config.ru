@@ -1,4 +1,4 @@
-class ToUpper
+class ToUpperMiddleware
   # Our class will be initialize with another Rack app
   def initialize(app)
     @app = app
@@ -29,5 +29,5 @@ end
 #run app
 
 #can do the same by
-use ToUpper # Tell Rack to use our newly-minted middleware
+use ToUpperMiddleware # Tell Rack to use our newly-minted middleware
 run Hello

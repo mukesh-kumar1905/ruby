@@ -9,7 +9,7 @@ class Hello
 		res.finish
 		#same as returning [200, {"Content-type"=>"text/html"},["Hello from Rack!"]] 
 		# You can get/set headers with square bracket syntax:
-		#   res["Content-Type"] = "text/plain"
+		#   res["Content-Type"] = "text/plain" or "text/html"
 		# You can set and delete cookies
 		#   res.set_cookie("user_id", 1)
 		#   res.delete_cookie("user_id")
