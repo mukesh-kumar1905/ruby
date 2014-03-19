@@ -14,7 +14,7 @@ end
  
 some_class = SomeClass.new(5)
 printer = some_class.value_printer("some value")
- 
+#example of closure 
 caller(printer)
 
 normal_lambda = lambda {|param1, param2| puts "param1: #{param1} and param2: #{param2}"}
