@@ -7,7 +7,7 @@ class Polygon
   end
 end
 
-puts Polygon.sides
+puts "poly sides #{Polygon.sides }"
 class Triangle < Polygon
 	def initialize
 		super
@@ -15,8 +15,8 @@ class Triangle < Polygon
   @@sides = 3
 end
 
-puts Triangle.sides 
-puts Polygon.sides 
+puts "tri sides #{Triangle.sides }"
+puts "poly sides #{Polygon.sides }"
 #http://railstips.org/blog/archives/2006/11/18/class-and-instance-variables-in-ruby/
 class String
 	def words

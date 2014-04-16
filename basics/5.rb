@@ -1,6 +1,6 @@
 my_file=File.new("example.txt",'w')
 my_file.puts "Hello"
-my_file.puts "Hello dsfsdf"
+my_file.puts "test"
 my_file.close
 my_file=File.new("example.txt",'r')
 #puts my_file.read
@@ -9,7 +9,8 @@ puts my_file.readlines.inspect
 my_file.close
 
 File.open("example.txt",'r') do |file|
-	puts "file"+file.readlines.join(";")
+	puts "file"
+	puts file.readlines.each{ |x| x.chomp! }.join(",")
 end
 
 #Dir.mkdir "TestDir"

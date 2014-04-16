@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require "/home/kira/3.rb"
+require "/home/mukesh/code/ruby/basics/3.rb"
 #or load
 class MegaGreeter
   attr_accessor :names

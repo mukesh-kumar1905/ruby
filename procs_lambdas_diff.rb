@@ -1,3 +1,4 @@
+#unlike Procs, lambdas check the number of arguments passed.
 def args(code)
   one, two = 1, 2
   code.call(one, two)
